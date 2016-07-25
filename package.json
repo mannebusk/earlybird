@@ -1,0 +1,25 @@
+{
+  "name": "earlybird",
+  "version": "1.0.0",
+  "description": "Keeps track of who is winning",
+  "main": "dist/bot.js",
+  "dependencies": {
+    "co": "^4.6.0",
+    "moment": "^2.14.1",
+    "nedb": "^1.8.0",
+    "slackbots": "^0.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0"
+  },
+  "scripts": {
+    "test": "mocha dist/tests/",
+    "build": "babel -w src/ -d dist/ ---source-maps",
+    "run": "npm run build && node dist/bot.js"
+  },
+  "author": "Manne Busk",
+  "license": "MIT"
+}
