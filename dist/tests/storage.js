@@ -8,10 +8,6 @@ var _storage = require("../storage.js");
 
 var _storage2 = _interopRequireDefault(_storage);
 
-var _claims = require("../claims.js");
-
-var _claims2 = _interopRequireDefault(_claims);
-
 var _fs = require("fs");
 
 var _fs2 = _interopRequireDefault(_fs);
@@ -19,8 +15,6 @@ var _fs2 = _interopRequireDefault(_fs);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var should = _chai2.default.should();
-
-var test = new _claims2.default("tests/data/storage.json");
 
 describe("Storage", function () {
   it("Store initialized", function () {

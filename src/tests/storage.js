@@ -1,11 +1,8 @@
 import chai     from "chai";
 import Storage, {StorageError}  from "../storage.js";
-import Claims   from "../claims.js";
 import fs       from "fs";
 
 const should = chai.should();
-
-let test = new Claims("tests/data/storage.json");
 
 describe("Storage", () => {
   it("Store initialized", () => {
